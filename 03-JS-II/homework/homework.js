@@ -21,10 +21,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if(edad >= 18){
-    return "allowed";
+    return "Allowed";
   }
   else{
-    return "Not"+" "+"allowed";
+    return "Not allowed";
   }
 }
   
@@ -56,9 +56,9 @@ function saludo(idioma) {
     return "Guten Tag!";
   }
   else if(idioma == "mandarin"){
-    return "Ni Hao";
+    return "Ni Hao!";
   }
-  else if(idioma == "ingles!"){
+  else if(idioma == "ingles"){
     return "Hello!";
   }
   else if(idioma !== "aleman" || idioma !== "mandarin" || idioma !== "ingles"){
@@ -136,14 +136,14 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 3 ==0){
-    return "fizz";
+  if(numero % 15 ===0){
+    return "fizzbuzz";
   }
-  else if(numero % 5 ==0){
+  if(numero % 5 ===0){
     return "buzz";
   }
-  else if(numero % 3 ==0 && numero % 5 ==0){
-    return "fizzbuzz";
+  if(numero % 3 ===0){
+    return "fizz";
   }
   else{
   return numero;
@@ -173,6 +173,7 @@ function operadoresLogicos(num1, num2, num3) {
     return false;
   }
 
+}
  
 
 function esPrimo(numero) {
